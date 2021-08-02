@@ -44,9 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: RoundButtonView(
+        child: AnimatedConnectingButtonWidget(
           width: 220,
           height: 220,
+          onConnectingButtonTap: () {
+            print("got button clicked");
+          },
           buttonText: TextSpan(
               text: 'GO', style: TextStyle(color: Colors.black, fontSize: 32)),
         ),

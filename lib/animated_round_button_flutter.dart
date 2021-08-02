@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
-class RoundButtonView extends StatefulWidget {
+class AnimatedConnectingButtonWidget extends StatefulWidget {
   final double? width;
   final double? height;
   final TextSpan buttonText;
@@ -15,12 +15,14 @@ class RoundButtonView extends StatefulWidget {
   final double borderThickness;
 
   final Color buttonColor;
+  final Function? onConnectingButtonTap;
 
-  RoundButtonView({
+  AnimatedConnectingButtonWidget({
     Key? key,
     this.width,
     this.height,
     this.reversePlusDistance = 20,
+    this.onConnectingButtonTap,
     required this.buttonText,
     this.plusDuration = const Duration(milliseconds: 300),
     this.buttonColor = const Color(0xFF42bcb6),
@@ -30,13 +32,20 @@ class RoundButtonView extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _RoundButtonViewState createState() => _RoundButtonViewState();
+  AnimatedConnectingButtonWidgetState createState() =>
+      AnimatedConnectingButtonWidgetState();
 }
 
-class _RoundButtonViewState extends State<RoundButtonView>
+class AnimatedConnectingButtonWidgetState
+    extends State<AnimatedConnectingButtonWidget>
     with TickerProviderStateMixin {
+  
+  ///
+  ///
+  ///Animation controller for go button render box
   late AnimationController plusAnimationController;
   late AnimationController reversePlusAnimationController;
+
   @override
   void initState() {
     plusAnimationController =
@@ -69,37 +78,43 @@ class _RoundButtonViewState extends State<RoundButtonView>
 
   @override
   Widget build(BuildContext context) {
-    ThemeData themeData = Theme.of(context);
     return Container(
-      child: _RoundButtonViewWidgetObject(
-        state: this,
+      child: InkWell(
+        onTap: () {
+          if (widget.onConnectingButtonTap != null) {
+            widget.onConnectingButtonTap!();
+          }
+        },
+        child: AnimatedConnectingButtonWidgetObject(
+          state: this,
+        ),
       ),
     );
   }
 }
 
-class _RoundButtonViewWidgetObject extends LeafRenderObjectWidget {
-  _RoundButtonViewWidgetObject({
+class AnimatedConnectingButtonWidgetObject extends LeafRenderObjectWidget {
+  AnimatedConnectingButtonWidgetObject({
     required this.state,
   });
 
   @override
   RenderObject createRenderObject(BuildContext context) {
-    return _RoundButtonViewRenderBox(state: state);
+    return AnimatedConnectingButtonWidgetRenderBox(state: state);
   }
 
-  final _RoundButtonViewState state;
+  final AnimatedConnectingButtonWidgetState state;
 
   @override
-  void updateRenderObject(
-      BuildContext context, covariant _RoundButtonViewRenderBox renderObject) {}
+  void updateRenderObject(BuildContext context,
+      covariant AnimatedConnectingButtonWidgetRenderBox renderObject) {}
 }
 
-class _RoundButtonViewRenderBox extends RenderBox {
-  final _RoundButtonViewState state;
+class AnimatedConnectingButtonWidgetRenderBox extends RenderBox {
+  final AnimatedConnectingButtonWidgetState state;
   Animation plusAnimation;
 
-  _RoundButtonViewRenderBox({
+  AnimatedConnectingButtonWidgetRenderBox({
     required this.state,
   }) : plusAnimation = CurvedAnimation(
             parent: state.plusAnimationController, curve: Curves.ease);
@@ -119,15 +134,9 @@ class _RoundButtonViewRenderBox extends RenderBox {
 
   Path? path;
   Path? closePathFormGradient;
+
   @override
   void paint(PaintingContext context, Offset offset) {
-    // //listen animaiton status
-    // if (state.animationController.status == AnimationStatus.completed ||
-    //     state.animationController.status == AnimationStatus.dismissed) {
-    //   state.lastValue = value;
-    //   state.lastProgress = precentage;
-    // }
-
     Canvas canvas = context.canvas;
 
     canvas.translate(offset.dx, offset.dy);
