@@ -58,6 +58,7 @@ AnimatedConnectingButtonWidget(
 
 # Screenshots
 ![Screenshot 2021-08-02 at 9 50 43 PM](https://user-images.githubusercontent.com/14270768/127892988-5e3b9500-17c1-48b5-9e0e-7a8c60b35d32.png)    
+![rounded button animation](https://user-images.githubusercontent.com/14270768/127893714-492072a4-6a5a-4276-9bdf-30947ecda280.gif)
 
 
 
