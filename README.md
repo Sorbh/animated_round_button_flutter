@@ -4,7 +4,7 @@ AnimatedConnectingButtonWidget is a simple and customizable animated connecting 
 
 The source code is **100% Dart**.
 
-[![pub package](https://img.shields.io/pub/v/kdgaugeview.svg?style=flat-square)](https://pub.dartlang.org/packages/AnimatedConnectingButtonWidget) ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)
+[![pub package](https://img.shields.io/pub/v/kdgaugeview.svg?style=flat-square)](https://pub.dartlang.org/packages/AnimatedConnectingButtonWidget)  ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)
 
 
 # Motivation
@@ -59,7 +59,7 @@ AnimatedConnectingButtonWidget(
 # Screenshots
 ![Screenshot 2021-08-02 at 9 50 43 PM](https://user-images.githubusercontent.com/14270768/127892988-5e3b9500-17c1-48b5-9e0e-7a8c60b35d32.png)    
 
-https://user-images.githubusercontent.com/14270768/127893023-c229582f-3a42-4fa9-a8a5-1ea81c206fa0.mov
+
 
 
 
