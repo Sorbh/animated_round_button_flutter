@@ -21,7 +21,7 @@ This library is posted in pub.dev
 #### pubspec.yaml
 ```dart
 dependencies:  
-	animated_round_button_flutter: ^1.0.4
+	animated_round_button_flutter: ^1.0.0
 ```
 
 # Usage
