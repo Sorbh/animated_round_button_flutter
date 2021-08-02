@@ -1,14 +1,81 @@
-# animated_round_button_flutter
 
-A new Flutter package project.
+# AnimatedConnectingButtonWidget
+AnimatedConnectingButtonWidget is a simple and customizable animated connecting button widget [AnimatedConnectingButtonWidget](https://github.com/Sorbh/AnimatedConnectingButtonWidget)
 
-## Getting Started
+The source code is **100% Dart**.
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+[![pub package](https://img.shields.io/pub/v/kdgaugeview.svg?style=flat-square)](https://pub.dartlang.org/packages/AnimatedConnectingButtonWidget) ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+# Motivation
+
+I need some clean animated connectingbuttong widget my Flutter application.
+
+# Getting started
+
+## Installing
+Add this to your package's pubspec.yaml file:
+
+This library is posted in pub.dev
+
+#### pubspec.yaml
+```dart
+dependencies:  
+	animated_round_button_flutter: ^1.0.4
+```
+
+# Usage
+
+After Importing this library, you can directly use this view in your Widget tree
+
+```dart
+import 'package:animated_round_button_flutter/animated_round_button_flutter.dart';
+```
+
+
+```dart
+AnimatedConnectingButtonWidget(
+          width: 220,
+          height: 220,
+          onConnectingButtonTap: () {
+            print("got button clicked");
+          },
+          buttonText: TextSpan(
+              text: 'GO', style: TextStyle(color: Colors.black, fontSize: 32)),
+        )
+```
+
+# Customization
+  Depending on your view you may want to tweak the UI. For now you can these custom attributes
+
+  | Property | Type | Description |
+  |----------|------|-------------|
+  | 'width' | double | width for connecting button |
+  | 'height' | double | height for connecting button |
+  | 'buttonText' | TextSpan | TextSpan Widget to add custom text on connecting button |
+
+
+
+# Screenshots
+![Screenshot 2021-08-02 at 9 50 43 PM](https://user-images.githubusercontent.com/14270768/127892988-5e3b9500-17c1-48b5-9e0e-7a8c60b35d32.png)    
+
+https://user-images.githubusercontent.com/14270768/127893023-c229582f-3a42-4fa9-a8a5-1ea81c206fa0.mov
+
+
+
+
+
+# Author
+  * **Saurabh K Sharma - [GIT](https://github.com/Sorbh)**
+  
+      I am very new to open source community. All suggestion and improvement are most welcomed. 
+  
+ 
+## Contributing
+
+1. Fork it (<https://github.com/sorbh/animated_round_button_flutter/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
