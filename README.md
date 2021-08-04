@@ -74,10 +74,6 @@ AnimatedConnectingButtonWidget(
 
 
 # Contributors
-[//]: contributor-faces
-
-.    <a href=""><img src="" title="Rohit Kumar Mishra" width="80" height="80"></a>
-
 
 
 <table>
@@ -101,7 +97,7 @@ AnimatedConnectingButtonWidget(
 </table>
 
 
-[//]: contributor-faces
+
  
   
  
