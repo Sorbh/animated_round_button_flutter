@@ -76,7 +76,30 @@ AnimatedConnectingButtonWidget(
 # Contributors
 [//]: contributor-faces
 
-<a href="https://github.com/Sorbh"><img src="https://avatars.githubusercontent.com/u/8159377?v=4" title="Sorabh" width="80" height="80"></a>.    <a href="https://github.com/RohitKumarMishra"><img src="https://avatars.githubusercontent.com/u/14270768?v=4" title="Rohit Kumar Mishra" width="80" height="80"></a>
+.    <a href=""><img src="" title="Rohit Kumar Mishra" width="80" height="80"></a>
+
+
+
+<table>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+
+        <a href=https://github.com/Sorbh>
+            <img src=https://avatars.githubusercontent.com/u/8159377?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sorbh/>
+            <br />
+            <sub style="font-size:14px"><b>Sorabh</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+                    <a href=https://github.com/RohitKumarMishra>
+            <img src=https://avatars.githubusercontent.com/u/14270768?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=RohitKumarMishra/>
+            <br />
+            <sub style="font-size:14px"><b>RohitKumarMishra</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
+
 
 [//]: contributor-faces
  
